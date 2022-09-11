@@ -1,9 +1,3 @@
-test
-<<<<<<< HEAD
+test2 i hate him being a mommy's boy
 
-# inser lines
-
-# and check this out
-
-"try this out"
 
