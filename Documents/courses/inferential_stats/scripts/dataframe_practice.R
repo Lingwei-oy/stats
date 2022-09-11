@@ -14,6 +14,11 @@ xbar <- mean(data$heights)
 ybar <- mean(data$shoes)
 points(xbar,ybar,col = 'red')
 abline(a = -24.608, b = 0.498)
-lm(shoes ~ heights, data = data)
+
+output <- lm(shoes ~ heights, data = data)
+trend <- output$coefficients
+abline(a = trend[1], b = trend[2], col = 'blue') # best fit
+plot(x = data$heights, y = data$shoes, pch = data$sex)
+data$sex <- as.character(data$sex)
 
 library(ggplot2)
